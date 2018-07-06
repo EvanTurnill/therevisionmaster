@@ -1,0 +1,218 @@
+/*footer*/
+
+footer {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    font-size: 14px;
+		min-width: 100vw;
+		margin: auto auto 0 auto;
+}
+
+/* Default styling is for mobile devices */
+
+.footer {
+	background-color: #292c2f;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+	padding: 60px 0px;
+	/* height: 200px; */
+	box-sizing: border-box;
+	margin: auto auto 0 auto;
+
+
+}
+
+.footer-limiter{
+	max-width: 1000px;
+}
+
+.footer .footer-limiter {
+	text-align: center;
+
+}
+
+/* Logo */
+
+.footer .footer-limiter h1 {
+	float: none;
+	font: normal 28px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 1;
+	margin: -8px 0 10px;
+}
+
+.footer .footer-limiter h1 span {
+	color: #5383d3;
+}
+
+.footer .footer-limiter p {
+	float: right;
+	padding-right: 20px;
+  font-style: italic;
+	font: normal 'Frank Ruhl Libre', serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+/* The footer links */
+
+.footer .footer-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.footer .footer-limiter nav{
+	/*font:16px Arial, Helvetica, sans-serif;*/
+	line-height: 1;
+	float:none;
+}
+
+
+	.footer .footer-limiter nav a {
+		font-size: 13px;
+	}
+
+	.footer .footer-limiter nav a:hover{
+	opacity: 1;
+}
+
+.footer .footer-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+
+.footer .footer-limiter nav ul {
+    list-style: none;
+    background: #1c1c1c;
+		padding: 16px 0;
+		margin-top: 0px;
+		margin-bottom: 0px;
+
+}
+
+.footer .footer-limiter li a {
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    height: 2em;
+    border-bottom: 1px solid #383838;
+		text-align: center;
+
+}
+
+.footer .footer-limiter li:last-child a {
+    border-bottom: none;
+}
+
+.footer .footer-limiter li a:hover,
+.footer .footer-limiter li a:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
+
+
+/* Making the footer responsive for tablets */
+
+@media (min-width: 550px) {
+
+
+
+
+
+}
+
+
+/* Making the footer responsive for laptops and bigger*/
+
+@media (min-width: 768px) {
+
+	.footer {
+		background-color: #292c2f;
+		box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+		padding: 20px 40px;
+		height: 80px;
+		box-sizing: border-box;
+		/*position:fixed;*/
+
+	}
+
+
+
+	.footer .footer-limiter {
+		max-width: 1000px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	/* Logo */
+
+	.footer .footer-limiter h1 {
+		float: left;
+		font: normal 28px Arial, Helvetica, sans-serif;
+		line-height: 40px;
+		margin: 0;
+	}
+
+	.footer .footer-limiter h1 span {
+		color: #5383d3;
+	}
+
+	.footer .footer-limiter p {
+		float: right;
+    font-style: italic;
+    font: normal 'Frank Ruhl Libre', serif;
+		line-height: 40px;
+		margin: 0;
+	}
+
+	/* The footer links */
+
+	.footer .footer-limiter a {
+		color: #ffffff;
+		text-decoration: none;
+    font-style: italic;
+    font: normal 'Frank Ruhl Libre', serif;
+	}
+
+	.footer .footer-limiter nav{
+		display:none;
+	}
+
+
+	.footer .footer-limiter nav a{
+		display: none;
+	}
+
+	.footer .footer-limiter nav a:hover{
+		opacity: 1;
+		display: none;
+	}
+
+	.footer .footer-limiter nav a.selected {
+		color: #608bd2;
+		pointer-events: none;
+		opacity: 1;
+		display: none;
+	}
+
+}
+
+
+/* For the footers to look good, be sure to reset the margin and padding of the body */
+/*
+body {
+	min-height: 0px;
+	margin-bottom: 0px;
+	clear: both;
+}
+*?

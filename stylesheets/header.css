@@ -1,0 +1,286 @@
+/* Default styling is for mobile devices */
+* {
+    box-sizing: border-box;
+}
+
+
+.header {
+	background-color: #292c2f;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);*/
+	/*ox-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);*/
+	padding: 20px 0;
+	height: 75px;
+	box-sizing: border-box;
+
+}
+
+.header-limiter {
+		max-width: 1000px;
+}
+/* Logo */
+
+.header .header-limiter h1 {
+	float: left;
+	margin-top:27px;
+	padding-left: 10px;
+	text-align: center;
+	/*font: normal 28px Cookie, Arial, Helvetica, sans-serif;*/
+  font-family: 'Frank Ruhl Libre', serif;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.header .header-limiter h1 span {
+	color: #5383d3;
+}
+
+/* The header links */
+
+.header .header-limiter a {
+ color: #ffffff;
+ text-decoration: none;
+}
+
+.header .header-limiter nav{
+  font-family: 'Frank Ruhl Libre', serif;
+	font-size:16px
+	line-height: 1;
+	float:none;
+	text-align: center;
+	display:none;
+}
+
+.header .header-limiter nav a{
+	display: inline-block;
+
+	padding: 0 5px;
+	text-decoration:none;
+	color: #ffffff;
+	font-size: 13px;
+	opacity: 0.9;
+}
+
+.header .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header .header-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+a.to_nav {
+    float: right;
+    color: red;
+    background: #4e4e4e;
+    text-decoration: none;
+    padding: 15px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 5px;
+    height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+		margin-right: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+
+}
+a.to_nav:hover,
+a.to_nav:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
+/* The hidden menu links */
+
+.hiddenmenu {
+	color: #ffffff;
+	text-decoration: none;
+	padding-top: 0px;
+}
+
+.hiddenmenu nav{
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 1;
+	float:none;
+
+}
+
+
+	.hiddenmenu nav a {
+		font-size: 13px;
+	}
+
+	.hiddenmenu nav a:hover{
+	opacity: 1;
+}
+
+.hiddenmenu nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+
+.hiddenmenu nav ul {
+    list-style: none;
+    background: #1c1c1c;
+    padding: 16px 0;
+
+		margin-top: 0px;
+		margin-bottom: 0px;
+}
+
+.hiddenmenu li a {
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    height: 2em;
+    border-bottom: 1px solid #383838;
+		text-align: center;
+}
+
+.hiddenmenu li:last-child a {
+    border-bottom: none;
+}
+
+.hiddenmenu li a:hover,
+.hiddenmenu li a:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
+
+/* Making the header responsive for tablet*/
+
+@media (min-width: 550px) {
+
+	.header {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header .header-limiter nav {
+		line-height: 1;
+		float:none;
+		display:block;
+	}
+
+	.header .header-limiter nav a {
+		font-size: 13px;
+	}
+
+
+
+	a.to_nav {
+	    display: none;
+	}
+
+	.hiddenmenu{
+		display:none;
+	}
+
+}
+
+/* Making the header responsive for laptop and bigger*/
+
+@media (min-width: 768px) {
+
+.header {
+	padding: 20px 40px;
+	height: 80px;
+}
+
+.header .header-limiter {
+
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+.header .header-limiter h1 {
+	float: left;
+	line-height: 40px;
+	margin: 0;
+}
+
+
+
+/* The header links */
+
+.header .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header .header-limiter nav{
+	font-family: 'Frank Ruhl Libre', serif;
+	line-height: 40px;
+	float: right;
+	display:block;
+}
+
+.header .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: #ffffff;
+	font-size: 17px;
+	opacity: 0.9;
+}
+
+.header .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header .header-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+
+a.to_nav {
+    display: none;
+}
+
+.hiddenmenu{
+	display:none;
+}
+
+}
+
+code{
+  white-space:pre-wrap;
+  word-wrap:break-word;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* For the headers to look good, be sure to reset the margin and padding of the body */
+/*
+body {
+	margin:0;
+	padding:0;
+}
+*/
